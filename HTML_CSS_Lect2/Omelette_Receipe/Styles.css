@@ -1,0 +1,10 @@
+﻿body {
+    font-family: "Outfit", sans-serif;
+    color: rgb(95,87,78);
+}
+
+img {
+    width: 100%; /* relative unit*/
+    height: 171px; /* absolute unit*/    
+    object-fit: cover;
+}
