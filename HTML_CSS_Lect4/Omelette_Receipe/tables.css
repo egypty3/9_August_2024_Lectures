@@ -1,0 +1,26 @@
+﻿body {
+    font-family:Arial, Helvetica, sans-serif;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table ,td,th{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+th {
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+    padding:12px 8px;
+}
+/*Pseudo Class */
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+/*Pseudo Class */
+tr:hover {
+    background-color: #ddd;
+}

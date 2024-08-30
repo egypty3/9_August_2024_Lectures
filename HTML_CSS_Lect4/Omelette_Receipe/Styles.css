@@ -1,0 +1,120 @@
+﻿:root {
+    /*css variable*/
+    --myColor: rgb(133, 70, 50);
+    /*--myPadding:24px;*/
+}
+
+/* zeroing default style */
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    color: rgb(95,87,78);
+    padding: 128px 48px;
+    background-color: rgb(243,230,216);
+}
+
+.main-card {
+    background-color: rgb(255, 255, 255);
+    padding: 40px;
+    border-radius: 24px;
+    max-width: 736px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%; /* relative unit*/
+    height: 171px; /* absolute unit*/
+    object-fit: cover;
+}
+
+.text-content {
+    padding: 40px 32px;
+    display:flex;
+    flex-direction:column;
+    gap:32px;
+}
+
+h1, h2 {
+    font-family: "Young Serif",sans-serif;
+    font-weight:400;
+}
+h1 {
+    font-size: 36px;
+    color: rgb(48, 45, 44);
+    margin-bottom: 24px;
+}
+
+p {
+    color: rgb(95, 87, 78);
+    line-height: 150%;
+}
+.preparation {
+    background-color: rgb(255, 245, 250);
+    padding: 24px;
+    border-radius:12px;
+}
+h3 {
+    font-size: 20px;
+    color: rgb(123, 40, 79);
+    font-weight:600;
+    margin-bottom:16px;
+}
+
+ul, ol {
+    padding-left: 24px;
+}
+li {
+    margin-bottom: 8px;
+    padding-left:16px;
+}
+
+li:last-child {
+    margin-bottom: 0;
+}
+/*Pseudo Element*/
+li::marker {
+    color: rgb(123, 40, 79);   
+    font-weight: 700;
+    line-height: 150%;
+}
+
+h2 {
+    font-size: 28px;
+    color: var(--myColor);
+    margin-bottom: 24px;
+}
+.nutrition p {
+    margin-bottom: 20px;
+}
+hr {
+    border: 1px solid rgb(228, 222, 216);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border-bottom: 1px solid rgb(228, 222, 216);
+    padding-left: 32px;
+    padding-bottom: 16px;
+}
+
+th {
+    text-align: left;
+    font-weight:400;
+}
+.number {
+    color: var(--myColor);
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.last {
+    border-bottom:none;
+}

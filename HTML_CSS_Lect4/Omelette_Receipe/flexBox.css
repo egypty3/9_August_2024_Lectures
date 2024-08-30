@@ -1,0 +1,27 @@
+﻿#elkabeer {
+    height: 100vh;
+    display: flex;
+    background: dodgerblue;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start; /*horizontal*/
+    align-items:center ;  /*vertical*/
+}
+
+#elkabeer div {
+    background-color: #f1f1f1;
+    
+    /*height: 100px;*/
+    line-height: 100px;
+    margin: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+/*Selector grouping*/
+#div1,#div2,#div3 {
+    flex:1;
+}
+#div4{
+    flex:2;
+}
