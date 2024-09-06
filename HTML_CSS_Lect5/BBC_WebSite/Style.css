@@ -1,2 +1,36 @@
 ﻿body {
+    font-family:Helvetica;
+}
+#topar {
+    display: flex;
+    height: 40px;
+    width: 1100px;
+    margin: 0 auto;
+    background-color:beige;
+}
+.topbar-section{
+    border-left: 1px #ccc solid;
+}
+.topbar-menu {
+    font-weight:bold;
+    font-size:90%;
+    padding: 13px 15px 0 15px;
+}
+#logo {
+    margin-top:8px;
+    margin-right:8px;
+}
+#signin-div {
+    display: flex;
+}
+#signin-image {
+    width: 25px;
+    height: 25px;
+    margin:11px 15px;
+}
+#signin-text {
+    margin-top: 14px;
+    font-weight: bold;
+    font-size:90%;
+    padding-right:50px;
 }
