@@ -4,9 +4,10 @@
 #topar {
     display: flex;
     height: 40px;
-    width: 1100px;
+    width:1100px;
+    min-width: 1100px;
     margin: 0 auto;
-    background-color:beige;
+    /* background-color:beige;*/
 }
 .topbar-section{
     border-left: 1px #ccc solid;
@@ -33,4 +34,58 @@
     font-weight: bold;
     font-size:90%;
     padding-right:50px;
+}
+#bill-div {
+    display: flex;
+}
+#bell {
+    height: 25px;
+    margin: 9px 8px 0 8px;
+}
+
+#more-arrow {
+    margin-left: 20px;  
+}
+#search-div {
+    display: flex;
+}
+#search-box {
+    background-color: #e4e4e4;
+    border:none;
+    font-weight:bold;
+    font-size:14px;
+    margin:5px 0 5px 5px;
+}
+#magnifying-glass{
+    height:30px;
+    margin-top:5px;
+}
+
+header{
+    background-color:#bb1919;
+    height:70px;
+    border:1px solid #ccc;
+}
+#menu-bar {
+    display: flex;
+    width: 1100px;
+    min-width: 1100px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+#menu-bar h1{
+    margin:0;
+    color:white;
+    font-size:40px;
+    font-weight:normal;
+    padding-top:10px;
+}
+#local-news{
+    border:1px #bb4545 solid;
+    width:250px;
+    padding:5px 5px 0 10px;
+}
+
+#local-news a {
+
 }
