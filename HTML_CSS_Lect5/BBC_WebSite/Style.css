@@ -62,11 +62,11 @@
 }
 
 header{
-    background-color:#bb1919;
-    height:70px;
+    background-color:#bb1919;   
     border:1px solid #ccc;
 }
 #menu-bar {
+    height: 70px;
     display: flex;
     width: 1100px;
     min-width: 1100px;
@@ -87,5 +87,42 @@ header{
 }
 
 #local-news a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    position: relative;
+    top:-8px;
+}
 
+#local-news a:hover {
+    text-decoration: underline;
+}
+
+#menubar-2-container {
+    background-color: #A91717;
+}
+
+#menubar-2 {
+    width: 1100px;
+    min-width: 1100px;
+    margin: 0 auto;
+    height:40px;
+}
+
+#menubar-2 a {
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+    font-size: 14px;
+    position:relative;
+    top:10px;
+    border-right: 1px solid #bb4545;
+}
+
+.no-border {
+    border: none!important;
+}
+#down-arrow {
+    position: relative;
+    top: 10px;
 }
