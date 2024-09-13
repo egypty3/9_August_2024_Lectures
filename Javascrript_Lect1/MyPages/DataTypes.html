@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Testing Datatypes at Javascript</title>
+</head>
+<body>
+    <script>
+        let message = "hello"; // string
+        message = 123456;     // number
+        console.log(message);
+
+        let n = 123;
+        n = 12.345;
+
+        console.log(n / 0);
+        console.log(-n / 0);
+        console.log("not a number" / 2);
+        console.log(NaN + 1);
+        console.log(3 * NaN);
+
+
+        // String
+        let userName = "Tarek"; // double quote
+        let str2 = 'Single quotes are ok too';  // single quote
+        let sentince = `Hello ya ${userName} 3amel eeh , result of 77 * 342  is ${77 * 342}`;// Backtics
+        console.log(sentince);
+        //let sentince = "Hello ya" + userName +  " 3amel eeh "; // concatenation
+
+
+        //Boolean
+        let isMarried = true;
+        let isExptedFromMilitary = false;
+
+        let isGreater = 4 > 1;
+
+        console.log(isGreater);
+
+
+
+        // undefined
+        let myAge;
+        console.log(myAge);
+
+
+
+
+        // typeof
+        console.log(typeof 34243);
+        console.log(typeof "to do");
+        console.log(typeof "34324");
+
+
+    </script>
+</body>
+</html>

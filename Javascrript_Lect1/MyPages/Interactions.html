@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Interactions</title>
+</head>
+<body>
+    <input type="button"
+           value="Delete"
+           onclick="confirmDelete();" />
+
+    <input type="button"
+           value="Ask about age"
+           onclick="askAge();" />
+
+    <script>
+        // alert("Hello");
+        function askAge() {
+            let age = prompt('How old are you?', 100);
+            alert(`You are ${age} years old!`);
+        }
+        function confirmDelete() {
+            let isConfirmed = confirm("Are you sure that you want to delete ?");
+            alert(`Confirmation for delete is :  ${isConfirmed}`)
+        }
+
+    </script>
+</body>
+</html>
