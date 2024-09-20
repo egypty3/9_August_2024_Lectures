@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Arrays</title>
+    <link href="arrays.css" rel="stylesheet" />
+</head>
+<body>
+    <script>
+        let fruits = ["Apple", "Orange", "Plum", "Grabes", "Dates"];
+        //document.write("original array : <br/>");
+        //document.write(fruits + "<br/><br/>");
+        //alert(fruits[0]);
+        //alert(fruits[4]);
+        //alert(fruits.length);
+        //alert(fruits);
+
+        //fruits.pop();
+        //document.write("array after calling .pop() : <br/>");
+        //document.write(fruits + "<br/><br/>");
+
+        //fruits.shift();
+        //document.write("array after calling .shift() : <br/>");
+        //document.write(fruits + "<br/><br/>");
+
+        //fruits.push("Pear");
+        //document.write("array after calling .push() : <br/>");
+        //document.write(fruits + "<br/><br/>");
+
+        //fruits.unshift("Peach");
+        //document.write("array after calling .unshift() : <br/>");
+        //document.write(fruits + "<br/><br/>");
+
+
+        //let indexOfTheLastElement = fruits.length - 1;
+        //document.write(fruits[indexOfTheLastElement]);
+        //////////////////////////////////////////////////////////////////
+        document.write("<ul>");
+
+        for (let i = 0; i < fruits.length; i++) {
+            document.write("<li>"  + fruits[i] + "</li>");
+        }
+
+        document.write("</ul>");
+        //////////////////////////////////////////////////////////////////
+        document.write("<table>");
+
+        for (let i = 0; i < fruits.length; i++) {
+            document.write("<tr><td>" + fruits[i] + "</td></tr>");
+        }
+
+        document.write("</table>");
+        ////////////////////////////////////////////////////////////////
+
+    </script>
+</body>
+</html>

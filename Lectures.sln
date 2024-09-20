@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HTML_CSS_Lect5", "HTML_CSS_
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assignment_2_House_for_Sale", "Assignment_2_House_for_Sale\Assignment_2_House_for_Sale.csproj", "{9C064E49-8C8D-414B-A0DC-BC99C05E772D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Javascrript_Lect1", "Javascrript_Lect1\Javascrript_Lect1.csproj", "{A6EF398C-4265-4A3C-9A1B-F589F63905F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Javascrript_Lect1", "Javascrript_Lect1\Javascrript_Lect1.csproj", "{A6EF398C-4265-4A3C-9A1B-F589F63905F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Javascrript_Lect2", "Javascrript_Lect2\Javascrript_Lect2.csproj", "{332911E2-8B8E-46ED-BE0E-90581B83EE92}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{A6EF398C-4265-4A3C-9A1B-F589F63905F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6EF398C-4265-4A3C-9A1B-F589F63905F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6EF398C-4265-4A3C-9A1B-F589F63905F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{332911E2-8B8E-46ED-BE0E-90581B83EE92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{332911E2-8B8E-46ED-BE0E-90581B83EE92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{332911E2-8B8E-46ED-BE0E-90581B83EE92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{332911E2-8B8E-46ED-BE0E-90581B83EE92}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
