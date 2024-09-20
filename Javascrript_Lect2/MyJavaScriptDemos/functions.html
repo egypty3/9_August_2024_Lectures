@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>functions</title>
+    <link href="functions.css" rel="stylesheet" />
+</head>
+<body>
+    <input type="button" value="call the 'showMessage()' function"
+           onclick="showMessage();" />
+
+    <script>
+        function showMessage() {
+            alert('Hello everyone!');
+        }
+        function addChatMessage(from, text) {
+            document.getElementById("chatBody").innerHTML +=
+                `*${from}*:${text} <br/>`;
+        }
+    </script>
+
+
+
+    <section>
+        <form>
+            <div>
+                <label for="userName">User name :</label>
+                <input type="text" id="userName" />
+            </div>
+            <div>
+                <label for="message"> Message  :</label>
+                <textarea id="message" cols="50" rows="7"></textarea>
+            </div>
+            <div>
+                <input type="button" value="Send"                        
+                        onclick="addChatMessage('Tarek', 'hi');"/>
+            </div>
+        </form>
+        <div id="chatBody">
+
+        </div>
+    </section>
+</body>
+</html>

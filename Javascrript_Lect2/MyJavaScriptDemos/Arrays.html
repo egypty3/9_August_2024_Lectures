@@ -51,6 +51,22 @@
 
         document.write("</table>");
         ////////////////////////////////////////////////////////////////
+        document.write("<select>");
+
+        for (let i = 0; i < fruits.length; i++) {
+            document.write("<option>" + fruits[i] + "</option>");
+        }
+
+        document.write("</select>");
+        ///////////////////////////////////////////////////////////////
+        document.write("<ol>");
+
+        for (let key in fruits) {
+            //document.write("<li>" + fruits[key] + "</li>")
+            document.write(`<li>${fruits[key]}</li>`);
+        }
+
+        document.write("</ol>");
 
     </script>
 </body>
