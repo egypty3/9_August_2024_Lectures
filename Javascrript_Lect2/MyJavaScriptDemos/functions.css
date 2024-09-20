@@ -8,3 +8,11 @@ section {
 section div {
     margin-top: 20px;
 }
+
+#chatBody {
+    background-color:mistyrose;
+    width:100%;
+    height:50vh;
+    overflow:auto;
+    padding:20px;
+}

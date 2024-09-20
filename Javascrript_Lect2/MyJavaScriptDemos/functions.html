@@ -13,7 +13,10 @@
         function showMessage() {
             alert('Hello everyone!');
         }
-        function addChatMessage(from, text) {
+        function addChatMessage() {
+            let from = document.getElementById("userName").value;
+            let text = document.getElementById("message").value;
+
             document.getElementById("chatBody").innerHTML +=
                 `*${from}*:${text} <br/>`;
         }
@@ -33,12 +36,10 @@
             </div>
             <div>
                 <input type="button" value="Send"                        
-                        onclick="addChatMessage('Tarek', 'hi');"/>
+                        onclick="addChatMessage();"/>
             </div>
         </form>
-        <div id="chatBody">
-
-        </div>
+        <div id="chatBody"></div>
     </section>
 </body>
 </html>
