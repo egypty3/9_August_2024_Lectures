@@ -6,7 +6,12 @@
     <link rel="stylesheet" href="DomTree.css"/>
 </head>
 <body>
-    <table>
+    <input type="text" id="rowIndex" placeholder="enter row index"/>
+    <input type="text" id="cellIndex" placeholder="enter cell index"/>
+    <input type="button" onclick="changeTableCellStyle();" value="Choose a cell to change"/>
+    <input type="button" onclick="resetTableBackgroundStyle();" value="reset table background style"/>
+
+    <table id="myTable">
         <tr>
             <th>Company</th>
             <th>Contact</th>
@@ -43,19 +48,15 @@
             <td>Italy</td>
         </tr>
     </table>
-    <input type="text" id="rowIndex" placeholder="enter row index"/>
-    <input type="text" id="cellIndex" placeholder="enter cell index"/>
 
-    <input type="button" onclick="changeTableCellStyle();" value="Choose a cell to change"/>
-    <input type="button" onclick="resetTableBackgroundStyle();" value="reset table background style"/>
 
     <script>
         let rIndex = 1;
         let cIndex = 1;
-        let rowsCount = document.body.children[0].rows.length;
-        let columnsCount = document.body.children[0].rows[0].cells.length;
-        //console.log(`Table rows count :  ${document.body.children[0].rows.length}`);
-        //console.log(`Table columns count :  ${document.body.children[0].rows[0].cells.length}`);
+        let rowsCount = document.getElementById("myTable").rows.length;
+        let columnsCount = document.getElementById("myTable").rows[0].cells.length;
+        console.log(`Table rows count :  ${document.getElementById("myTable").rows.length}`);
+        console.log(`Table columns count :  ${document.getElementById("myTable").rows[0].cells.length}`);
 
         document.body.style.background = 'beige';
         setTimeout(
@@ -80,7 +81,7 @@
                 rIndex = document.getElementById("rowIndex").value;
             }
 
-            if (document.getElementById("cellIndex").value <= columnsCount) {
+            if (document.getElementById("cellIndex").value > columnsCount) {
                 alert('Invalid column entered');
                 return;
             }
@@ -89,13 +90,13 @@
             }
 
 
-            document.body.children[0].rows[rIndex-1].cells[cIndex-1].style.background = 'yellow';
+            document.getElementById("myTable").rows[rIndex-1].cells[cIndex-1].style.background = 'yellow';
         }
 
         function resetTableBackgroundStyle() {
             for (var i = 0; i < rowsCount; i++) {
                 for (var j = 0; j < columnsCount; j++) {
-                    document.body.children[0].rows[i].cells[j].style.background = '';
+                    document.getElementById("myTable").rows[i].cells[j].style.background = '';
                 }
             }
         }
