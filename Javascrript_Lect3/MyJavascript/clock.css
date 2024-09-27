@@ -1,0 +1,26 @@
+﻿#clock {
+    font-size:50px;
+    font-family:Arial, Helvetica, sans-serif;
+    width:600px;
+    margin:100px auto;
+    text-align:center;
+}
+#clock input[type='button']{
+    width:100px;
+    line-height:32px;
+    font-size:32px;
+    text-align:center;
+    border-radius:24px;
+    cursor:pointer;   
+}
+
+.hour {
+    color: red;
+}
+.min {
+    color: green;    
+}
+
+.sec {
+    color: blue;
+}
