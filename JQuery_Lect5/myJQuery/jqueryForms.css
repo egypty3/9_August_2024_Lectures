@@ -1,0 +1,31 @@
+﻿body {
+    font-family:Arial,sans-serif;
+    margin:20px;
+}
+.error{
+    border: 2px solid red;
+    background-color: #f8d7da;
+}
+.form-group {
+    margin-bottom:15px;
+}
+label {
+    display:block;
+    margin-bottom:5px;
+}
+input,select {
+    width:100%;
+    padding:8px;   
+}
+
+.submit-btn {
+    background-color:#4caf50;
+    color:white;
+    padding:10px 20px;
+    border:none;
+    cursor:pointer;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}

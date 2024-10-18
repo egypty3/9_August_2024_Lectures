@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="effects.css" rel="stylesheet"/>
+    <script src="../wwwroot/lib/jquery/jquery.min.js"></script>
+</head>
+<body>
+    <div id="pContainer">
+        <p>This is a paragraph with a little content .</p>
+        <p>This is another small paragraph .</p>
+    </div>
+    <button>Toggle between showing and hiding the paragraphs</button>
+    <div id="flip">Click to slide the panel down or up</div>
+    <div id="panel">Hello ya mens </div>
+
+    <input type="button" value="Click to fade in /out boxes"/>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+
+
+
+
+
+
+
+
+    <script>
+        $(function () {
+            $("button").on("click",
+                function () {
+                    $("p").toggle(1000);
+                }
+            );
+
+            $("#flip").on("click",
+                function () {
+                    $("#panel").slideToggle(700);
+                }
+            );
+
+            $("input[type=button]").on("click",
+                function () {
+                    $("#div1").fadeToggle();
+                    $("#div2").fadeToggle(700);
+                    $("#div3").fadeToggle(3000);
+                }
+            );
+        });
+    </script>
+</body>
+</html>

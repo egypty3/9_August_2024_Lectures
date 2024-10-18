@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="jqueryAnimations.css" rel="stylesheet"/>
+    <script src="../wwwroot/lib/jquery/jquery.min.js"></script>
+</head>
+<body>
+    <button id="btn1">Start Animation</button>
+    <div id="div1"></div>
+    <button id="btn2">Start Animation</button>
+    <div id="div2"></div>
+    <script>
+        $(function () {
+            $("#btn1").on("click",
+                function () {
+                    $("#div1").animate(
+                        {
+                            /*left: '+=250px',*/
+                            width: '-=10px',
+                            height: '-=10px'
+                        }
+                    );
+                }
+            );
+
+            $("#btn2").on("click",
+                function () {
+                    $("#div2").animate(
+                        {
+                            left: '250px',
+                            opacity: '0.5',
+                            width: 'toggle',
+                            height: 'toggle'
+                        },3000
+                    );
+                }
+            );
+        });
+    </script>
+</body>
+</html>

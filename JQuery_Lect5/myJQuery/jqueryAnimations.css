@@ -1,0 +1,17 @@
+﻿#div1 {
+    background: #98bf21;
+    height: 100px;
+    width: 100px;
+    position:absolute;
+    margin:10px;
+}
+
+#div2 {
+    background: #dd78db;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top : 150px;
+    margin: 10px;
+}
+

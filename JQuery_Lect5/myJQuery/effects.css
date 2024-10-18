@@ -1,0 +1,43 @@
+﻿p {
+    margin:0;
+}
+body {
+
+}
+#pContainer {
+    height: 40vh;
+    background-color:rosybrown;
+}
+
+#flip {
+    cursor:pointer;
+}
+#panel, #flip {
+    padding:5px;
+    background-color: #e5eecc;
+    border: 1px solid #c3c3c3;
+    text-align:center;   
+}
+
+#panel {
+    padding:50px
+    
+}
+
+#div1,#div2,#div3 {
+    margin:20px;
+    width:80px;
+    height:80px;
+}
+
+#div1 {
+    background-color:red;
+}
+
+#div2 {
+    background-color: green;
+}
+
+#div3 {
+    background-color: blue;
+}
