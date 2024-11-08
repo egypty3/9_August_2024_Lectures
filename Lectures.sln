@@ -25,6 +25,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JQuery_Lect4", "JQuery_Lect
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JQuery_Lect5", "JQuery_Lect5\JQuery_Lect5.csproj", "{BDABED2B-1131-4A36-BBF4-45B3AB2EC440}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bootstrap_Lect1", "Bootstrap_Lect1\Bootstrap_Lect1.csproj", "{922C9E9E-2B2F-440B-A454-9058F91B41A6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{BDABED2B-1131-4A36-BBF4-45B3AB2EC440}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDABED2B-1131-4A36-BBF4-45B3AB2EC440}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BDABED2B-1131-4A36-BBF4-45B3AB2EC440}.Release|Any CPU.Build.0 = Release|Any CPU
+		{922C9E9E-2B2F-440B-A454-9058F91B41A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{922C9E9E-2B2F-440B-A454-9058F91B41A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{922C9E9E-2B2F-440B-A454-9058F91B41A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{922C9E9E-2B2F-440B-A454-9058F91B41A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
