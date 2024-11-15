@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet"
+          href="../wwwroot/lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet"
+          href="conactUs.css" />
+</head>
+<body>
+    <div class="container my-5">
+        <div class="row align-items-center">
+            <div class="col-md-6 col-xl-4 my-3">
+                What is Lorem Ipsum?
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+                Why do we use it?
+                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+                Where does it come from?
+                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+                The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+            </div>
+            <div class="col-md-6 col-xl-5 my-3">
+                <h1 class="text-center text-primary">Contact us</h1>
+                <form>
+                    <!-- Floating label for Name-->
+                    <div class="form-floating mb-3">
+                        <input type="text"
+                               id="name" name="name"
+                               class="form-control"
+                               placeholder="Your Name" />
+                        <label for="name">Name</label>
+                    </div>
+                    <!-- Floating label for Email-->
+                    <div class="form-floating mb-3">
+                        <input type="email"
+                               id="email" name="email"
+                               class="form-control"
+                               placeholder="Your Email" />
+                        <label for="email">Email</label>
+                    </div>
+
+                    <!-- Floating label for Telephone-->
+                    <div class="form-floating mb-3">
+                        <input type="tel"
+                               id="tel" name="tel"
+                               class="form-control"
+                               placeholder="Your phone" />
+                        <label for="tel">Phone</label>
+                    </div>
+
+                    <!-- Floating label for Message-->
+                    <div class="form-floating mb-3">
+                        <textarea id="message" name="message"
+                                  class="form-control"
+                                  placeholder="Your Message"></textarea>
+                        <label for="message">Message</label>
+                    </div>
+
+                    <!--Select-->
+                    <div class="mb-3">
+                        <label for="subject" class="form-label text-primary">Subject</label>
+                        <select class="form-select" id="subject" name="subject">
+                            <option value="" disabled selected>Select a Subject</option>
+                            <option value="1">Support</option>
+                            <option value="2">Sales</option>
+                            <option value="3">Feedback</option>
+                        </select>
+                    </div>
+                    <!--Checkboxes-->
+                    <div class="mb-3">
+                        <label class="form-label text-primary">Topics of Interest</label>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input"
+                                   id="topic1" name="topic1" value="web-design" />
+                            <label class="form-check-label"
+                                   for="topic1">Web Design</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input"
+                                   id="topic2" name="topic2" value="development" />
+                            <label class="form-check-label"
+                                   for="topic2">Development</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input"
+                                   id="topic3" name="topic3" value="seo" />
+                            <label class="form-check-label"
+                                   for="topic1">SEO</label>
+                        </div>
+                    </div>
+
+                    <!--Radio Buttons-->
+                    <div class="mb-3">
+                        <label class="form-label text-primary">Preferred Contact Method</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="contactMethod"
+                                   value="email" id="contactEmail" checked />
+                            <label class="form-check-label" for="contactEmail">Email</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="contactMethod"
+                                   value="phone" id="contactPhone" />
+                            <label class="form-check-label" for="contactPhone">Phone</label>
+                        </div>
+                    </div>
+                    <!--Submit button-->
+                    <div class="text-center">
+                        <input type="submit" class="btn btn-primary" />
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-12 col-xl-3 d-sm-none d-xl-block my-5 py-5">
+                <img src="JUKE.jpg" class="img-fluid"/>
+            </div>
+        </div>
+    </div>
+
+    <script src="../wwwroot/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

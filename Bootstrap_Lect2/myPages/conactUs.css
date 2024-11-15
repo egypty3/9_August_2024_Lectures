@@ -1,0 +1,10 @@
+﻿body {
+}
+textarea{
+    height:150px!important;
+}
+
+/*input:focus, textarea:focus ,select:focus {
+    outline: 2px solid #4caf50!important;*/ /* Green outline*/
+    /*box-shadow: 0 0 5px  rgba(76,175,80,0.75)!important;*/ /* Green glow*/
+/*}*/
