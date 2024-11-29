@@ -27,7 +27,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JQuery_Lect5", "JQuery_Lect
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bootstrap_Lect1", "Bootstrap_Lect1\Bootstrap_Lect1.csproj", "{922C9E9E-2B2F-440B-A454-9058F91B41A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootstrap_Lect2", "Bootstrap_Lect2\Bootstrap_Lect2.csproj", "{6CED2826-1173-48A0-9A3E-A8DDDBD3F8EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bootstrap_Lect2", "Bootstrap_Lect2\Bootstrap_Lect2.csproj", "{6CED2826-1173-48A0-9A3E-A8DDDBD3F8EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootstrap_Lect3", "Bootstrap_Lect3\Bootstrap_Lect3.csproj", "{15F92560-0696-4EFA-90D6-258B27C11E39}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{6CED2826-1173-48A0-9A3E-A8DDDBD3F8EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6CED2826-1173-48A0-9A3E-A8DDDBD3F8EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6CED2826-1173-48A0-9A3E-A8DDDBD3F8EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15F92560-0696-4EFA-90D6-258B27C11E39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15F92560-0696-4EFA-90D6-258B27C11E39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15F92560-0696-4EFA-90D6-258B27C11E39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15F92560-0696-4EFA-90D6-258B27C11E39}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
