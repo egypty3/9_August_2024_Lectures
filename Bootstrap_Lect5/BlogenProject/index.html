@@ -1,0 +1,328 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../wwwroot/lib/bootstrap/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../wwwroot/lib/bootstrap-icons/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <!--Menu-->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark p-0">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">Blogen</a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav">
+            <li class="nav-item px-2">
+              <a href="index.html" class="nav-link">Dashboard</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="posts.html" class="nav-link">Posts</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="categories.html" class="nav-link">Categories</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="users.html" class="nav-link">Users</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+              >
+                <i class="bi bi-person"></i> Welcome Tarek
+              </a>
+              <div class="dropdown-menu">
+                <a href="profile.html" class="dropdown-item">
+                  <i class="bi bi-person-circle"></i> Profile
+                </a>
+                <a href="settings.html" class="dropdown-item">
+                  <i class="bi bi-gear"></i> Settings
+                </a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="login.html" class="nav-link">
+                <i class="bi bi-box-arrow-right"></i> Logout
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--HEADER-->
+    <header class="bg-primary text-white py-2">
+      <div class="container">
+        <h1><i class="bi bi-gear"></i> Dashboard</h1>
+      </div>
+    </header>
+    <!--Actions-->
+    <section class="bg-light p-4 mb-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 d-grid">
+            <a
+              href="#"
+              class="btn btn-primary"
+              data-bs-target="#addPostModal"
+              data-bs-toggle="modal"
+            >
+              <i class="bi bi-plus"></i> Add Post
+            </a>
+          </div>
+          <div class="col-md-3 d-grid">
+            <a
+              href="#"
+              class="btn btn-success"
+              data-bs-target="#addCategoryModal"
+              data-bs-toggle="modal"
+            >
+              <i class="bi bi-plus"></i>Add Category
+            </a>
+          </div>
+          <div class="col-md-3 d-grid">
+            <a
+              href="#"
+              class="btn btn-warning"
+              data-bs-target="#addUserModal"
+              data-bs-toggle="modal"
+            >
+              <i class="bi bi-plus"></i> Add user
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Posts-->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="card">
+              <div class="card-header">
+                <h4>Latest Posts</h4>
+              </div>
+              <div class="card-body">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Title</th>
+                      <th>Category</th>
+                      <th>Date</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Post One</td>
+                      <td>Web Development</td>
+                      <td>May 10 2021</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Post Two</td>
+                      <td>Tech Gadgets</td>
+                      <td>May 11 2021</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>Post Three</td>
+                      <td>Web Development</td>
+                      <td>May 13 2021</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>Post Four</td>
+                      <td>Business</td>
+                      <td>May 15 2021</td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>Post Five</td>
+                      <td>Web Development</td>
+                      <td>May 17 2021</td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>Post Six</td>
+                      <td>Health & Wellness</td>
+                      <td>May 20 2021</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card bg-primary text-white shadow text-center mb-3">
+              <div class="card-body">
+                <h3>Posts</h3>
+                <h4 class="display-4"><i class="bi bi-pencil-fill"></i> 6</h4>
+                <a href="posts.html" class="btn btn-outline-light btn-sm">
+                  View
+                </a>
+              </div>
+            </div>
+            <div class="card bg-success text-white shadow text-center mb-3">
+              <div class="card-body">
+                <h3>Categories</h3>
+                <h4 class="display-4"><i class="bi bi-files"></i> 4</h4>
+                <a href="categories.html" class="btn btn-outline-light btn-sm">
+                  View
+                </a>
+              </div>
+            </div>
+            <div class="card bg-warning text-white shadow text-center mb-3">
+              <div class="card-body">
+                <h3>Users</h3>
+                <h4 class="display-4"><i class="bi bi-people-fill"></i> 4</h4>
+                <a href="users.html" class="btn btn-outline-light btn-sm">
+                  View
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer id="main-footer" class="bg-dark text-white mt-5 p-5">
+      <div class="container">
+        <p class="lead text-center">Blogen &copy; 2024 by Tarek Mamdouh</p>
+      </div>
+    </footer>
+    <!--Modals-->
+    <!--Add Post Modal-->
+    <div class="modal fade" id="addPostModal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white">
+            <h5 class="modal-title">Add Post</h5>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <label for="title" class="form-label">Title</label>
+              <input type="text" class="form-control" id="title" />
+            </div>
+            <div>
+              <label for="category" class="form-label">Category</label>
+              <select class="form-select" id="category">
+                <option value="">Web Development</option>
+                <option value="">Tech Gadgets</option>
+                <option value="">Business</option>
+                <option value="">Health & Wellness</option>
+              </select>
+            </div>
+            <div>
+              <label for="image" class="form-label">Upload Image</label>
+              <input type="file" class="form-control" id="image" />
+            </div>
+            <div>
+              <label class="form-label" for="editor"> body </label>
+              <div id="editor"></div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div>
+              <button class="btn btn-primary" data-bs-dismiss="modal">
+                Save Changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add Category Modal-->
+
+    <div class="modal fade" id="addCategoryModal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-success text-white">
+            <h5 class="modal-title">Add Categoy</h5>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <label for="title" class="form-label">Title</label>
+              <input type="text" class="form-control" id="title" />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div>
+              <button class="btn btn-success" data-bs-dismiss="modal">
+                Save Changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add User Modal-->
+    <div class="modal fade" id="addUserModal" tabindex="-1"aria-labelledby="addUserModalLabel"aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-warning">
+            <h5 class="modal-title" id="addUserModalLabel">Add User</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control"id="username" required />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required />
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" required />
+              </div>
+              <div class="mb-3">
+                <label for="confirmPassword" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" id="confirmPassword" required />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-warning">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../wwwroot/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/41.2.0/classic/ckeditor.js"></script>
+    <script>
+      ClassicEditor.create(document.querySelector("#editor")).catch((error) => {
+        console.error(error);
+      });
+    </script>
+  </body>
+</html>
