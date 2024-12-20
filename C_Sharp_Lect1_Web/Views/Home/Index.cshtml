@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    //int x = 3 * 343;
+}
+
+<form>
+    <div class="my-3">
+        <label for="moneyAmount" class="form-label">Amount of money:</label>
+        <input type="number" class="form-control" 
+            id="moneyAmount" 
+            name="moneyAmount" />
+    </div>
+    <div class="my-3">
+        <label for="profitPercentage" class="form-label">Profit Precentage (%):</label>
+        <input type="number" class="form-control"
+               id="profitPercentage"
+               name="profitPercentage" />
+    </div>
+    <div class="d-grid my-3">
+        <button class="btn btn-primary">Calc total</button>
+    </div>
+    <div class="text-center">
+        <label class="display-2 text-primary"></label>
+    </div>
+</form>

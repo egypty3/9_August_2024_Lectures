@@ -35,6 +35,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootstrap_Lect4", "Bootstra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootstrap_Lect5", "Bootstrap_Lect5\Bootstrap_Lect5.csproj", "{A6929B78-366B-4DDF-847B-01EF55C215D5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C_Sharp_Lect1", "C_Sharp_Lect1\C_Sharp_Lect1.csproj", "{80B880F2-41B3-4FAE-BFDD-7A774ECF5716}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C_Sharp_Lect1_Web", "C_Sharp_Lect1_Web\C_Sharp_Lect1_Web.csproj", "{1BC59A0A-80F9-41B9-85BB-4CA3674B4225}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +109,14 @@ Global
 		{A6929B78-366B-4DDF-847B-01EF55C215D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6929B78-366B-4DDF-847B-01EF55C215D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6929B78-366B-4DDF-847B-01EF55C215D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80B880F2-41B3-4FAE-BFDD-7A774ECF5716}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80B880F2-41B3-4FAE-BFDD-7A774ECF5716}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80B880F2-41B3-4FAE-BFDD-7A774ECF5716}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80B880F2-41B3-4FAE-BFDD-7A774ECF5716}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BC59A0A-80F9-41B9-85BB-4CA3674B4225}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BC59A0A-80F9-41B9-85BB-4CA3674B4225}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BC59A0A-80F9-41B9-85BB-4CA3674B4225}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BC59A0A-80F9-41B9-85BB-4CA3674B4225}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
