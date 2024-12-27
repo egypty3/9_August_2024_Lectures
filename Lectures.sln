@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C_Sharp_Lect1_Web", "C_Shar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C_Sharp_Lect2_Web", "C_Sharp_Lect2_Web\C_Sharp_Lect2_Web.csproj", "{C0F1095B-CE7F-4E49-B55C-8F5668BD0BB1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C_Sharp_Lect2", "C_Sharp_Lect2\C_Sharp_Lect2.csproj", "{09F7294F-15C7-47DE-A9CC-B37882C80BBC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +125,10 @@ Global
 		{C0F1095B-CE7F-4E49-B55C-8F5668BD0BB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0F1095B-CE7F-4E49-B55C-8F5668BD0BB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0F1095B-CE7F-4E49-B55C-8F5668BD0BB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09F7294F-15C7-47DE-A9CC-B37882C80BBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09F7294F-15C7-47DE-A9CC-B37882C80BBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09F7294F-15C7-47DE-A9CC-B37882C80BBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09F7294F-15C7-47DE-A9CC-B37882C80BBC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

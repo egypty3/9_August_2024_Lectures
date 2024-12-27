@@ -1,6 +1,7 @@
-using C_Sharp_Lect1_Web.Models;
+﻿using C_Sharp_Lect1_Web.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace C_Sharp_Lect1_Web.Controllers
 {
@@ -11,6 +12,45 @@ namespace C_Sharp_Lect1_Web.Controllers
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
+        }
+
+        
+        public IActionResult DayOfTheWeek()
+        {
+            DateTime myDate = DateTime.Now;
+            int day = (int)myDate.DayOfWeek;
+            Console.WriteLine(day);
+
+            string dayName = "";
+
+            switch (day)
+            {
+                case 0:
+                    dayName = "الأحد";
+                    break;
+                case 1:
+                    dayName = "الإثنين";
+                    break;
+                case 2:
+                    dayName = "الثلاثاء";
+                    break;
+                case 3:
+                    dayName = "الأربعاء";
+                    break;
+                case 4:
+                    dayName = "الخميس";
+                    break;
+                case 5:
+                    dayName = "الجمعة";
+                    break;
+                case 6:
+                    dayName = "السبت";
+                    break;
+                default:
+                    break;
+            }
+            ViewBag.dayName = dayName;
+            return View();
         }
 
         [HttpGet]
