@@ -4,7 +4,7 @@ namespace C_Sharp_Lect3_Web.Controllers
 {
     public class ElectricityBillController : Controller
     {
-        [HttpGet]
+        
         public IActionResult Index()
         {
             return View();
