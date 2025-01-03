@@ -1,0 +1,47 @@
+﻿@*
+    This view would have a form that contains a customerId ,
+    customerName and numberOfKiloWattsConsumed
+    inputs
+*@
+<h1 class="text-danger-emphasis">Electricity Bill</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4">
+            <form method="post">
+                <div>
+                    <label for="customerId" class="form-label">Customer id</label>
+                    <input type="text" name="customerId" id="customerId" class="form-control" value="@ViewBag.customerId" />
+                </div>
+                <div>
+                    <label for="customerName" class="form-label">Customer name</label>
+                    <input type="text" name="customerName" id="customerName" class="form-control"  value="@ViewBag.customerName"/>
+                </div>
+                <div>
+                    <label for="numberOfKiloWattsConsumed" class="form-label">number of kilowatts consumed</label>
+                    <input type="text" name="numberOfKiloWattsConsumed" id="numberOfKiloWattsConsumed" class="form-control"
+                           value="@ViewBag.numberOfKiloWattsConsumed" />
+                </div>
+                <div class="my-3 d-grid">
+                    <input type="submit" class="btn btn-dark" value="Print Invoice"/>
+                </div>
+            </form>
+             @if( ViewBag.NetAmount != null)
+             {
+                <div class="card">
+                    <div class="card-header text-center">
+                        Bill
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Customer ID NO: <span>@ViewBag.customerId</span></li>
+                        <li class="list-group-item">Customer Name : <span>@ViewBag.customerName</span></li>
+                        <li class="list-group-item">KiloWatts Consumed :<span>@ViewBag.numberOfKiloWattsConsumed</span></li>
+                        <li class="list-group-item">Net Amount Paid By the Customer :
+                            <span class="text-danger-emphasis"> @ViewBag.NetAmount </span><span class="mx-1 fw-bold">Rs</span>
+                        </li>
+                    </ul>
+                </div>
+             }
+            
+        </div>
+    </div>
+</div>
