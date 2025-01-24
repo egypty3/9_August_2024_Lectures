@@ -5,7 +5,8 @@
         static void Main(string[] args)
         {
             //TestingProperties();
-            TestingInheritance();
+            //TestingInheritance();
+            TestingMethodOverloading();
         }
 
         private static void TestingProperties()
@@ -35,6 +36,14 @@
 
             TableTop tableTop = new TableTop(15, 20, 100);
             tableTop.Display();
+        }
+
+        private static void TestingMethodOverloading()
+        {
+            PrintData printData = new PrintData();
+            printData.Print(5);
+            printData.Print(500.263);
+            printData.Print("Hello C#");
         }
     }
 }

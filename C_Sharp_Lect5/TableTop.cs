@@ -24,7 +24,7 @@ namespace C_Sharp_Lect5
 
         public double GetCost()
         {
-            double area = GetArea();
+            double area = Area();
             return area * cost;
         }
 
