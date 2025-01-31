@@ -1,0 +1,30 @@
+﻿<div class="container">
+
+    <h1>Calculator</h1>
+    <form method="post" class="d-grid gap-2">
+        <div>
+            <label for="firstNumber">First Number</label>
+            <input type="text" class="form-control" id="firstNumber"
+                   name="firstNumber" value="@ViewBag.firstNumber" />
+        </div>
+        <div>
+            <label for="secondNumber">Second Number</label>
+            <input type="text" class="form-control" id="secondNumber"
+                   name="secondNumber" value="@ViewBag.secondNumber" />
+        </div>
+        <div>
+            <label for="operation">Operation</label>
+
+            <select class="form-select" id="operation" name="operation">
+                <option value="Add" selected="@(ViewBag.operation == "Add")">Add</option>
+                <option value="Subtract" selected="@(ViewBag.operation == "Subtract")">Subtract</option>
+                <option value="Multiply" selected="@(ViewBag.operation == "Multiply")">Multiply</option>
+                <option value="Divide" selected="@(ViewBag.operation == "Divide")">Divide</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-success">Calculate</button>
+        <label class="@ViewBag.resultColor text-center display-3">
+            @ViewBag.result
+        </label>
+    </form>
+</div>

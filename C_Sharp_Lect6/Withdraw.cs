@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace C_Sharp_Lect6
 {
-    public class Deposit : ITransactions
+    public class Withdraw : ITransactions
     {
         private int tCode;
         private int accNo;
@@ -14,28 +14,27 @@ namespace C_Sharp_Lect6
         private DateTime date;
 
         // default constructor
-        public Deposit()
+        public Withdraw()
         {
-           date = DateTime.Now;
+            date = DateTime.Now;
         }
-
         // parameterized constructor
-        public Deposit(int tCode, int accNo, double moneyDeposited)
+        public Withdraw(int tCode, int accNo, double moneyWithdrawn)
         {
             this.tCode = tCode;
             this.accNo = accNo;
-            this.amount += moneyDeposited;
+            this.amount -= moneyWithdrawn;
             date = DateTime.Now;
         }
         public double getAmount()
         {
-            return amount - (amount * 0.01);
-
+            return amount - (amount * 0.02);
         }
 
         public void showTransaction()
         {
-            Console.WriteLine("Deposit transaction code: {0}", tCode);
+            
+            Console.WriteLine("Withdraw transaction code: {0}", tCode);
             Console.WriteLine("Account Number: {0}", accNo);
             Console.WriteLine("Date: {0}", date);
             Console.WriteLine("Amount: {0}", getAmount());
