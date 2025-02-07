@@ -55,6 +55,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C_Sharp_Lect6", "C_Sharp_Le
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C_Sharp_Lect6_Web", "C_Sharp_Lect6_Web\C_Sharp_Lect6_Web.csproj", "{3F47B358-8123-4137-BC1C-9F0498776B2E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C_Sharp_Lect7_Web", "C_Sharp_Lect7_Web\C_Sharp_Lect7_Web.csproj", "{616DF44C-1C37-4DE5-B783-CEEF80BE0298}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -165,6 +167,10 @@ Global
 		{3F47B358-8123-4137-BC1C-9F0498776B2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F47B358-8123-4137-BC1C-9F0498776B2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F47B358-8123-4137-BC1C-9F0498776B2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{616DF44C-1C37-4DE5-B783-CEEF80BE0298}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{616DF44C-1C37-4DE5-B783-CEEF80BE0298}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{616DF44C-1C37-4DE5-B783-CEEF80BE0298}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{616DF44C-1C37-4DE5-B783-CEEF80BE0298}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
