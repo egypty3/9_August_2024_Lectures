@@ -14,6 +14,14 @@ namespace ASP.NET_Core_Lect1.Data
             //modelBuilder.Entity<Course>().ToTable("ElDawrat");
             //modelBuilder.Entity<Student>().ToTable("ElTalba");
             //modelBuilder.Entity<Enrollment>().ToTable("ElEshtrakat");
+
+            modelBuilder.Entity<Student>()
+           .Property(s => s.ID)
+           .ValueGeneratedNever();
+
+            modelBuilder.Entity<Course>()
+           .Property(c => c.CourseID)
+           .ValueGeneratedNever();
         }
 
         // Dependency Injection

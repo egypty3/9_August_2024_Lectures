@@ -25,10 +25,7 @@ namespace ASP.NET_Core_Lect1.Migrations
             modelBuilder.Entity("ASP.NET_Core_Lect1.Models.Course", b =>
                 {
                     b.Property<int>("CourseID")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CourseID"));
 
                     b.Property<int>("Credits")
                         .HasColumnType("int");
@@ -71,10 +68,7 @@ namespace ASP.NET_Core_Lect1.Migrations
             modelBuilder.Entity("ASP.NET_Core_Lect1.Models.Student", b =>
                 {
                     b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
 
                     b.Property<DateTime>("EnrollmentDate")
                         .HasColumnType("datetime2");

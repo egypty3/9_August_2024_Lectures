@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ASP.NET_Core_Lect1.Migrations
 {
     [DbContext(typeof(SchoolContext))]
-    [Migration("20250425185133_Initial Migration")]
+    [Migration("20250502173115_Initial Migration")]
     partial class InitialMigration
     {
         /// <inheritdoc />
@@ -28,10 +28,7 @@ namespace ASP.NET_Core_Lect1.Migrations
             modelBuilder.Entity("ASP.NET_Core_Lect1.Models.Course", b =>
                 {
                     b.Property<int>("CourseID")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CourseID"));
 
                     b.Property<int>("Credits")
                         .HasColumnType("int");
@@ -42,7 +39,7 @@ namespace ASP.NET_Core_Lect1.Migrations
 
                     b.HasKey("CourseID");
 
-                    b.ToTable("ElDawrat", (string)null);
+                    b.ToTable("Courses");
                 });
 
             modelBuilder.Entity("ASP.NET_Core_Lect1.Models.Enrollment", b =>
@@ -68,16 +65,13 @@ namespace ASP.NET_Core_Lect1.Migrations
 
                     b.HasIndex("StudentID");
 
-                    b.ToTable("ElEshtrakat", (string)null);
+                    b.ToTable("Enrollments");
                 });
 
             modelBuilder.Entity("ASP.NET_Core_Lect1.Models.Student", b =>
                 {
                     b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
 
                     b.Property<DateTime>("EnrollmentDate")
                         .HasColumnType("datetime2");
@@ -92,7 +86,7 @@ namespace ASP.NET_Core_Lect1.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("ElTalba", (string)null);
+                    b.ToTable("Students");
                 });
 
             modelBuilder.Entity("ASP.NET_Core_Lect1.Models.Enrollment", b =>

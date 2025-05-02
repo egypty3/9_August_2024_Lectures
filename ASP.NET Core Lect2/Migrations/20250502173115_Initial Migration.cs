@@ -12,36 +12,34 @@ namespace ASP.NET_Core_Lect1.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "ElDawrat",
+                name: "Courses",
                 columns: table => new
                 {
-                    CourseID = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    CourseID = table.Column<int>(type: "int", nullable: false),
                     Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Credits = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_ElDawrat", x => x.CourseID);
+                    table.PrimaryKey("PK_Courses", x => x.CourseID);
                 });
 
             migrationBuilder.CreateTable(
-                name: "ElTalba",
+                name: "Students",
                 columns: table => new
                 {
-                    ID = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    ID = table.Column<int>(type: "int", nullable: false),
                     FirstMidName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     LastName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     EnrollmentDate = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_ElTalba", x => x.ID);
+                    table.PrimaryKey("PK_Students", x => x.ID);
                 });
 
             migrationBuilder.CreateTable(
-                name: "ElEshtrakat",
+                name: "Enrollments",
                 columns: table => new
                 {
                     EnrollmentID = table.Column<int>(type: "int", nullable: false)
@@ -52,29 +50,29 @@ namespace ASP.NET_Core_Lect1.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_ElEshtrakat", x => x.EnrollmentID);
+                    table.PrimaryKey("PK_Enrollments", x => x.EnrollmentID);
                     table.ForeignKey(
-                        name: "FK_ElEshtrakat_ElDawrat_CourseID",
+                        name: "FK_Enrollments_Courses_CourseID",
                         column: x => x.CourseID,
-                        principalTable: "ElDawrat",
+                        principalTable: "Courses",
                         principalColumn: "CourseID",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_ElEshtrakat_ElTalba_StudentID",
+                        name: "FK_Enrollments_Students_StudentID",
                         column: x => x.StudentID,
-                        principalTable: "ElTalba",
+                        principalTable: "Students",
                         principalColumn: "ID",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_ElEshtrakat_CourseID",
-                table: "ElEshtrakat",
+                name: "IX_Enrollments_CourseID",
+                table: "Enrollments",
                 column: "CourseID");
 
             migrationBuilder.CreateIndex(
-                name: "IX_ElEshtrakat_StudentID",
-                table: "ElEshtrakat",
+                name: "IX_Enrollments_StudentID",
+                table: "Enrollments",
                 column: "StudentID");
         }
 
@@ -82,13 +80,13 @@ namespace ASP.NET_Core_Lect1.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "ElEshtrakat");
+                name: "Enrollments");
 
             migrationBuilder.DropTable(
-                name: "ElDawrat");
+                name: "Courses");
 
             migrationBuilder.DropTable(
-                name: "ElTalba");
+                name: "Students");
         }
     }
 }
