@@ -61,6 +61,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFramework_Lect1_Conso
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP.NET Core Lect1", "ASP.NET Core Lect1\ASP.NET Core Lect1.csproj", "{A6FB719E-A77D-4339-8A41-AD43172C74DD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP.NET Core Lect2", "ASP.NET Core Lect2\ASP.NET Core Lect2.csproj", "{7F460B39-E777-3F9E-7B58-F78817C06C68}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -183,6 +185,10 @@ Global
 		{A6FB719E-A77D-4339-8A41-AD43172C74DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6FB719E-A77D-4339-8A41-AD43172C74DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6FB719E-A77D-4339-8A41-AD43172C74DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F460B39-E777-3F9E-7B58-F78817C06C68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F460B39-E777-3F9E-7B58-F78817C06C68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F460B39-E777-3F9E-7B58-F78817C06C68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F460B39-E777-3F9E-7B58-F78817C06C68}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
