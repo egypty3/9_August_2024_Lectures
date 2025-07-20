@@ -71,6 +71,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP.NET Core Lect5", "ASP.N
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP.NET Core Lect6", "ASP.NET Core Lect6\ASP.NET Core Lect6.csproj", "{46B8BDCD-BEDB-94A1-5324-F290FE790527}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP.NET Core Lect7", "ASP.NET Core Lect7\ASP.NET Core Lect7.csproj", "{CE4F83CB-4E16-EBB6-6AEB-C7E7C1EF0EB5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -213,6 +215,10 @@ Global
 		{46B8BDCD-BEDB-94A1-5324-F290FE790527}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46B8BDCD-BEDB-94A1-5324-F290FE790527}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46B8BDCD-BEDB-94A1-5324-F290FE790527}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE4F83CB-4E16-EBB6-6AEB-C7E7C1EF0EB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE4F83CB-4E16-EBB6-6AEB-C7E7C1EF0EB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE4F83CB-4E16-EBB6-6AEB-C7E7C1EF0EB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE4F83CB-4E16-EBB6-6AEB-C7E7C1EF0EB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
