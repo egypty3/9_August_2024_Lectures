@@ -1,0 +1,58 @@
+﻿@{
+    ViewData["Title"] = "Admin Dashboard";
+    var courseTitles = (List<string>) ViewBag.CourseTitles;
+    var courseCounts = (List<int>)ViewBag.CourseEnrollmentCounts;
+}
+
+<h2>@ViewData["Title"]</h2>
+<div class="row text-center">
+    <div class="col-md-3">
+        <div class="card p-3 shadow">
+            <strong>Students</strong><h3>@ViewBag.StudentCount</h3>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card p-3 shadow">
+            <strong>Courses</strong><h3>@ViewBag.CourseCount</h3>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card p-3 shadow">
+            <strong>Instructors</strong><h3>@ViewBag.InstructorCount</h3>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card p-3 shadow">
+            <strong>Enrollements</strong><h3>@ViewBag.EnrollmentCount</h3>
+        </div>
+    </div>
+</div>
+<hr/>
+<h4 class="mt-4">Enrollments per Course</h4>
+<canvas id="enrollmentChart" width="600" height="300"></canvas>
+@section Scripts {
+    <script>
+        const ctx = document.getElementById('enrollmentChart').getContext('2d');
+        const chart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: @Html.Raw(Json.Serialize(courseTitles)),
+                datasets: [{
+                    label: 'Enrollments',
+                    data: @Html.Raw(Json.Serialize(courseCounts)),
+                    backgroundColor: 'rgba(54, 162, 235, 0.5)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                scales: {
+                    x: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+}
